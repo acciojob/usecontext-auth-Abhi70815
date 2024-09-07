@@ -13,7 +13,7 @@ const ChekBox=()=>{
      setAuth(e.target.checked)
     }
     return <div>
-        {auth ? <p>{authText}</p>: <p>{noAuth}</p>}
+        {auth ? <p className="authText">{authText}</p>: <p>{noAuth}</p>}
         <input type="checkbox" onChange={handleCheck}/>
         <p  style={{display:"inline"}}>I'am not a robot</p>
     </div>
